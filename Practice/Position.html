@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+</head>
+<style>
+    .parent {
+        font-weight: 100;
+        background-color:skyblue;
+        color: black;
+        position: relative;
+        height: 200vh;
+        width: auto;
+        padding: 10px;
+        border: 1px solid red;
+        margin: 100;
+    }
+    .Child-one{
+        background-color: lightcoral;
+        color: darkblue;
+        font-size: 50px;
+        position: sticky;
+        top:0;
+        width: calc(25%100);
+        padding-left:100px;
+        border: 5px dashed black;
+        float: left;
+        box-sizing: auto;
+    }
+    .Child-two{
+        background-color: grey;
+        color: magenta;
+        font-size: 50px;
+        width: calc(25%100);
+        padding-right:100px;
+        border: 5px solid black;
+        float: left;
+        box-sizing: auto;
+    }
+    .Child-three{
+        background-color: burlywood;
+        color: blue;
+        font-size: 50px;
+        width: calc(25%100);
+        padding-top:100px;
+        border: 5px double red;
+        float: left;
+        box-sizing: auto;
+    }
+    .Child-four{
+        background-color: yellowgreen;
+        color: purple;
+        font-size: 50px;
+        width: calc(25%100);
+        padding-bottom:100px;
+        border: 5px ridge red;
+        float: left;
+        box-sizing: auto;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <h1>Parent</h1>
+        <div class="Child-one child">one</div>
+        <div class="Child-two child">two</div>
+        <div class="Child-three child">three</div>
+        <div class="Child-four child">four</div>
+    </div>
+</body>
+</html>
